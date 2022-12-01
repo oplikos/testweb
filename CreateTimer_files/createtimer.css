@@ -1,0 +1,684 @@
+
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 39rem;
+}.createtimer{
+  box-sizing: border-box;
+  padding: 3.1rem 2.9rem 3.3rem 2.8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #faeadc;
+}
+.bewtime {
+  margin-bottom: 3.6rem;
+  width: 100%;
+  height: 10.5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d49961;
+  border-radius: 2.4rem;
+  flex-shrink: 0;
+}
+.timertext {
+  margin-bottom: 2.8rem;
+  text-align: center;
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.group1 {
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 7.7rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+ .save {
+  margin-right: 1.5rem;
+  width: 20rem;
+  visibility: hidden;
+  margin-left: 6.7rem;
+  height: 70%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #eeeae8;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbb98a;
+  border-radius: 2.4rem;
+  flex-shrink: 0;
+}
+ .pause {
+  width: 17rem;
+  height: 100%;
+  margin-left: 8.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #faeadc;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ad6e2f;
+  border-radius: 2.4rem;
+  flex-shrink: 0;
+}
+.backtorecipetitle {
+  margin: 0rem 2.9rem 3.2rem 2.9rem;
+  width: calc(100% - 5.8rem);
+  height: 5.4rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4bc84;
+  border-radius: 2.4rem;
+  flex-shrink: 0;
+}
+.milk {
+  margin-bottom: 2.3rem;
+  width: 100%;
+  height: 3.3rem;
+  border-bottom: solid 0.1rem #37251b;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+ .group2 {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+  .milktext {
+  margin-right: 17.4rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+  .ingredientcomponentmilk {
+  width: 11.2rem;
+  height: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4bc84;
+  border-radius: 0.8rem;
+  flex-shrink: 0;
+}
+.brewtime2 {
+  margin-bottom: 2.3rem;
+  width: 100%;
+  height: 3.3rem;
+  border-bottom: solid 0.1rem #37251b;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+ .group3 {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.group4 {
+  box-sizing: border-box;
+  padding-right: 0.9788rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.brewtimetext {
+  margin-right: 12.9rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+   .time {
+  width: 2.4212rem;
+  height: 2.4222rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+  .ingredientcomponentbrewtime {
+  width: 5.5rem;
+  height: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4bc84;
+  border-radius: 0.8rem;
+  flex-shrink: 0;
+}
+.sugar{
+  margin-bottom: 2.3rem;
+  width: 100%;
+  height: 3.3rem;
+  border-bottom: solid 0.1rem #37251b;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.group5 {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+ .sugartext {
+  margin-right: 20rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+ .ingredientcomponentsugar {
+  width: 6.5rem;
+  height: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4bc84;
+  border-radius: 0.8rem;
+  flex-shrink: 0;
+}
+.coffeeground {
+  width: 100%;
+  height: 3.3rem;
+  border-bottom: solid 0.1rem #37251b;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+ .group6 {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+  .coffeegroundstext {
+  margin-right: 4.1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+  .ingredientcomponentcoffeground {
+  width: 12.6rem;
+  height: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.115;
+  color: #37251b;
+  font-family: Comfortaa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4bc84;
+  border-radius: 0.8rem;
+  flex-shrink: 0;
+}
+
+.counter-container {
+  position: relative;
+  height: 6rem;
+  width: 25rem;
+  padding-top: 2rem;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 2rem;
+}
+
+.min-container, .sec-container {
+  width: 35%;
+  float: left;
+  height: 100%
+}
+
+.min-text-container, .sec-text-container {
+  width: 15%;
+  float: left;
+  height: 100%;
+  line-height: 50%;
+  font-size: 500%;
+  line-height: 264px;
+  font-weight:100;
+  text-align: center;
+}
+
+.digit-container {
+  float: left;
+  width: 40%;
+  margin-left: 8%;
+  height: 100%;
+}
+
+.digit-upper{
+  height: 49%;
+  width: 98%;
+  animation-iteration-count: infinite;
+}
+
+.digit-lower{
+  height: 49%;
+  width: 98%;
+  animation-iteration-count: infinite;
+}
+.sec1upper, .sec1lower{animation-duration: 10s;}
+
+.sec1upper {animation-name: animate-upper-sec1}
+.sec1lower {animation-name: animate-lower-sec1}
+
+.sec2upper, .sec2lower{animation-duration: 60s;}
+
+.sec2upper {animation-name: animate-upper-sec2}
+.sec2lower {animation-name: animate-lower-sec2}
+
+.min1upper, .min1lower {animation-duration: 600s}
+
+.min1upper {animation-name: animate-upper-min1}
+.min1lower {animation-name: animate-lower-min1}
+
+.min2upper, .min2lower {animation-duration: 6000s}
+
+.min2upper {animation-name: animate-upper-min2}
+.min2lower {animation-name: animate-lower-min2}
+
+#timer {
+  animation-play-state: paused;
+}
+
+@keyframes animate-upper-sec1 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    1% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+
+    10% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+    11% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    20% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    21% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    30% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    31% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+
+    40% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+    41% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    50% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    51% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    60% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    61% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    70% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    71% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    80% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    81% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    90% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    91% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+}
+
+@keyframes animate-lower-sec1 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    1% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    10% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    11% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    20% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+    21% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    30% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    31% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    40% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    41% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    50% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    51% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    60% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    61% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid transparent}
+
+    70% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid transparent}
+    71% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    80% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    81% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    90% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    91% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+}
+
+@keyframes animate-upper-sec2 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    14.66% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    15.66% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+
+    31.33% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+    32.33% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    47.98% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    48.98% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    64.64% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    65.64% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+
+    81.3% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+    82.3% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    97.5% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    98.5% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+}
+
+@keyframes animate-lower-sec2 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    14.66% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    15.66% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    31.33% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    32.33% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    47.98% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+    48.98% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    64.64% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    65.64% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    81.3% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    82.3% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    97.5% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    98.5% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+}
+
+@keyframes animate-upper-min1 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    9.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    10% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+
+    19.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+    20% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    29.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    30% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    39.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    40% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+
+    49.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+    50% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    59.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    60% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    69.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    70% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    79.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    80% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    89.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    90% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    99.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+}
+
+@keyframes animate-lower-min1 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    9.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    10% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    19.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    20% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    29.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+    30% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    39.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    40% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    49.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    50% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    59.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    60% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    69.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    70% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    79.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    80% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    89.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    90% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    99.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+}
+/*******************************************************************************************************/
+@keyframes animate-upper-min2 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    9.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    10% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+
+    19.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid transparent}
+    20% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    29.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    30% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    39.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    40% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+
+    49.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid transparent; border-bottom: 3px solid rgb(56, 54, 54)}
+    50% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    59.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    60% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    69.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent; border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    70% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    79.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    80% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    89.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    90% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    99.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-top: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+}
+
+@keyframes animate-lower-min2 {
+    0% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    9.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    10% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    19.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    20% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    29.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid transparent;  border-bottom: 3px solid rgb(56, 54, 54)}
+    30% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+
+    39.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54);  border-bottom: 3px solid rgb(56, 54, 54)}
+    40% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    49.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    50% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    59.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    60% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    69.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    70% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+
+    79.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid transparent}
+    80% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    89.9% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    90% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+
+    99.9% {border-left: 3px solid transparent; border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+    100% {border-left: 3px solid rgb(56, 54, 54); border-right: 3px solid rgb(56, 54, 54); border-bottom: 3px solid rgb(56, 54, 54)}
+}
+@keyframes wave {
+  0% {opacity: 0; transform: translateY(15px)}
+  50% {opacity: 1; transform: translateY(0)}
+  100% {opacity: 0; transform: translateY(-15px)}
+}
+.loader {
+  top:3%;
+  left:1%;
+  margin-bottom: 2rem;
+}
+.loader ul {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+  width: 60px;
+  text-align: center;
+  animation: wave 2.5s infinite linear;
+  animation-fill-mode: forwards;
+}
+.loader li {
+  display: inline-block;
+  background: #bc8a0b;
+  height: 30px;
+  width: 9px;
+  border-radius: 0 100%;
+  transform: rotate(12deg);
+}
+.cup {
+  background: #4f3d04;
+  width: 60px;
+  height: 54px;
+  border-radius: 0 0 50% 50%;
+}
+.cup:before {
+  content: "";
+  width: 66px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+}
+.cup:after {
+  content: "";
+  width: 56px;
+  height: 12px;
+  border-radius: 50%;
+  background: #3A2F28;
+}
+.loader span {
+  background: #F2E3B4;
+  width: 13px;
+  height: 20px;
+  border-radius: 0 50% 50% 0;
+}
+.loader span:before {
+  content: "";
+  background: #BF7C2C;
+  width: 10px;
+  height: 12px;
+  border-radius: 0 50% 50% 0;
+}
+.loader span:after {
+  content: "";
+  background: #F2E3B4;
+  width: 40px;
+  height: 8px;
+  border-radius: 50%;
+}

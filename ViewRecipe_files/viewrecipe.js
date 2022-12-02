@@ -12,6 +12,17 @@ function init() {
     let deleteButton = document.querySelector('.deleteButton');
     let backButton = document.querySelector('.backtorecipe');
     let formEl = document.querySelector('form');
+    let timeButton = document.querySelector('.timeButton');
+    timeButton.addEventListener('click', ()=>{
+        let formData = new FormData(formEl);
+            let recipeObject = {
+                id: id
+            };
+            for (const pair of formData.entries()) {
+                recipeObject[pair[0]] = pair[1];
+            }
+        localStorage.setItem(selectRecipe, JSON.stringify(recipeObject));
+    });
     editButton.addEventListener('click', ()=>{
         let formData = new FormData(formEl);
             let recipeObject = {

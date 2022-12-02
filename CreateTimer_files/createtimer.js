@@ -38,8 +38,9 @@ function init() {
     let sec = time%60;
     if(sec < 10) sec = `0${sec}`;
     if(min < 10) min = `0${min}`;
-    let recipe = JSON.parse(localStorage.getItem(`newRecipe${localStorage.length}`));
-    recipe['time'] = `${min}:${sec}`;
-    localStorage.setItem(`newRecipe${localStorage.length}`, JSON.stringify(recipe));
+    let index = localStorage.getItem('index');
+    let recipe = JSON.parse(localStorage.getItem(`newRecipe${index}`));
+    recipe['Brew_Time'] = `${min}:${sec}`;
+    localStorage.setItem(`newRecipe${index}`, JSON.stringify(recipe));
   });
 }

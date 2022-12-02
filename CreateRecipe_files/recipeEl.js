@@ -9,7 +9,7 @@ class createRecipe extends HTMLElement {
         let styles = document.createElement('style');
         recipe.innerHTML =`
         <div>
-        <button><img src = ./HomeScreen_files/loadrecipebutton.png><button>
+        <button class="download"><img src = ./HomeScreen_files/savedrecipeloadbutton.png><button>
         <button class="recipeButton" onclick="window.location.href='./ViewRecipe.html'"><p></p><button>
         <p class="id" hidden></p>
         <div>

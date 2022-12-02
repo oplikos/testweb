@@ -5,14 +5,14 @@ function init() {
     let recipe = JSON.parse(localStorage.getItem(selectRecipe));
     let input = document.querySelectorAll('input');
     let stopTime = document.querySelector('.timetostop');
-    stopTime.textContent = recipe['time'];
+    stopTime.textContent = recipe['Brew_Time'];
     input.forEach((el) => {
         el.value = recipe[el.name];
     });
     var but1 = document.querySelector('.start');
     var but2 = document.querySelector('.pause');
     var timer = document.querySelectorAll('#timer');
-    var time = recipe['time'];
+    var time = recipe['Brew_Time'];
     var minAndSec = time.split(':');
     var min = minAndSec[0];
     var sec = minAndSec[1];
@@ -22,8 +22,12 @@ function init() {
     var sec = document.querySelector('.sec1upper');
     var coffee = document.querySelector('.loader');
     let t;
+    let alarm = document.querySelector('.alarm');
     function tout() {
-        t = setTimeout(() => but2.click(), timeInMs);
+        t = setTimeout(() => {
+            but2.click();
+            alarm.play();
+        }, timeInMs);
     }
     but1.addEventListener('click', () => {
         but1.style.visibility = "hidden";

@@ -138,8 +138,7 @@ body {
 .homescreen .loadsharedrecipebox {
   box-sizing: border-box;
   padding: 1.3rem 1.4rem 1.1rem 2.1rem;
-  width: 94%;
-  height:5.5rem;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: #ad6e2f;
@@ -147,7 +146,7 @@ body {
   flex-shrink: 0;
 }
 .homescreen .loadsharedrecipebox .loadrecipebutton {
-  margin: 0rem 5rem 0.063rem 0rem;
+  margin: 0rem 7rem 0.063rem 0rem;
 
   width: 2.0095rem;
   height: 2.5373rem;
@@ -156,26 +155,12 @@ body {
   flex-shrink: 0;
 }
 .homescreen .loadsharedrecipebox .loadnewrecipe {
-  font-family: Comfortaa, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-  overflow: hidden; 
-  position: absolute;
-  z-index: -1;
   text-align: right;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.2125;
   color: #faeadc;
-}
-.loadnewrecipe + label {
-  font-size: 2.4rem;
-  font-weight: 400;
   font-family: Comfortaa, 'Source Sans Pro';
-  text-align: right;
-  color: #faeadc;
-  display: inline-block;
-}
-.loadnewrecipe + label {
-  cursor: pointer; 
+  white-space: nowrap;
+  flex-shrink: 0;
 }

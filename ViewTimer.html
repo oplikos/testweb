@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="file:///C:/favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>ViewTimer</title>
+  <link rel="stylesheet" href="./ViewTimer_files/viewtimer.css">
+  <script src="./ViewTimer_files/viewtimer.js" type="module"></script>
+</head>
+<body>
+  <audio class="alarm" controls hidden>
+    <source src="./ViewTimer_files/mixkit-data-scaner-2847.wav" type="audio/mpeg">
+  </audio>
+<div class="viewtimer">
+  <div class="titlebrewtime">Brew Time</div>
+
+  <div class="brewtime">
+    <div class="group4">
+      <div class="group5">
+        <p class="brewtimetext1">Brew Time: </p>
+        <img class="time1" src="./ViewTimer_files/time.png">
+      </div>
+      <input class="ingredientcomponentbrewtime" value="05:00" name="Brew_Time" readonly>
+    </div>
+  </div>
+  <div class="timertext">
+    <div class="counter-container">
+      <div class="min-container">
+          <div class="digit-container">
+              <div class="digit-upper min2upper" id="timer"></div>
+              <div class="digit-lower min2lower" id="timer"></div>
+          </div>
+          <div class="digit-container">
+              <div class="digit-upper min1upper" id="timer"></div>
+              <div class="digit-lower min1lower" id="timer"></div>
+          </div>
+      </div>
+
+      <div class="sec-container">
+          <div class="digit-container">
+              <div class="digit-upper sec2upper" id="timer"></div>
+              <div class="digit-lower sec2lower" id="timer"></div>
+          </div>
+          <div class="digit-container">
+              <div class="digit-upper sec1upper" id="timer"></div>
+              <div class="digit-lower sec1lower" id="timer"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <button class="backtorecipe" onclick="window.location.href='./ViewRecipe.html'">Back to Recipes</button>
+  <div class="loader">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="cup"><span></span></div>
+  </div>
+  <div class="group6">
+    <button class="start">Start</button>
+    <button class="pause">Reset</button>
+  </div>
+  <p class="timetostop">05:02</p>
+</div>
+</body>
+</html>

@@ -7,14 +7,11 @@ function init() {
     let index = localStorage.getItem('index');
     let keys = Object.keys(localStorage);
     keys.forEach((el) => {
-        if(el != 'index' && el != 'debug') {
+        if(el != 'index' && el != 'debug' && el != "selectRecipe") {
             let savedRecipes = document.querySelector('.savedRecipes');
             let recipe = document.createElement('recipe-bar');
             let recipeObject = JSON.parse(localStorage.getItem(el));
-            let recipeName = recipeObject['name'];
-            let recipeId = recipeObject['id'];
-            let data = [recipeName, recipeId];
-            recipe.data = data;
+            recipe.data = recipeObject;
             savedRecipes.append(recipe);
         }
     });
@@ -54,6 +51,7 @@ function init() {
         let recipeObject = {
             id:`newRecipe${index}`,
             name: `newRecipe${index}`,
+            Drink_Type: "coffee",
             Brew_Method: "",
             Brew_Time: "",
             Grind_Setting: "",
@@ -65,6 +63,25 @@ function init() {
         };
         localStorage.setItem(`newRecipe${index}`, JSON.stringify(recipeObject));
     });
+
+    let newTeaButton = document.querySelector('.newtea');
+    newTeaButton.addEventListener('click', () => {
+        let recipeObject = {
+            id:`newRecipe${index}`,
+            name: `newRecipe${index}`,
+            Drink_Type: "tea",
+            Brew_Method: "",
+            Brew_Time: "",
+            Grind_Setting: "",
+            Milk_Q: "",
+            ProductBrand: "",
+            Setting_Brew: "",
+            Sugar: "",
+            WaterToBrew: "",
+        };
+        localStorage.setItem(`newRecipe${index}`, JSON.stringify(recipeObject));
+    });
+
     let upload = document.querySelector('.loadnewrecipe');
     upload.addEventListener('change', (event) => {
         const file = event.target.files[0];

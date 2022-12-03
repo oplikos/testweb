@@ -1,6 +1,13 @@
+import {isTea, swapToTeaColorTheme, getCurrentRecipe} from '../utils/utils.js';
+
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
+  let recipe = getCurrentRecipe();
+  if (isTea(recipe)) {
+    swapToTeaColorTheme();
+  }
+
   var but1 = document.querySelector('.pause');
   var but2 = document.querySelector('.save');
   var timer = document.querySelectorAll('#timer');

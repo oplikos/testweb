@@ -1,8 +1,12 @@
+import { isTea, swapToTeaColorTheme, getSelectedRecipe } from "../utils/utils.js";
+
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    let selectRecipe = localStorage.getItem('selectRecipe');
-    let recipe = JSON.parse(localStorage.getItem(selectRecipe));
+    let recipe = getSelectedRecipe();
+    if (isTea(recipe)) {
+      swapToTeaColorTheme();
+    }
     let input = document.querySelectorAll('input');
     let stopTime = document.querySelector('.timetostop');
     stopTime.textContent = recipe['Brew_Time'];

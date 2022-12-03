@@ -16,59 +16,61 @@
     <input class="title" value="Recipe Title" name="name">
     <div class="milk">
       <div class="group1" >
-        <p class="milktext">ProductBrand</p>
-        <input contenteditable="true" class="ingredientcomponentmilk" name="ProductBrand">
+        <p class="milktext">Product Brand</p>
+        <input contenteditable="true" class="ingredientcomponentmilk" value="Nescafé" name="ProductBrand">
       </div>
     </div>
     <div class="milk">
       <div class="group1" >
-        <p class="milktext">Setting Brew's:</p>
-        <input contenteditable="true" class="ingredientcomponentmilk"  name="Setting_Brew">
+        <p class="milktext">Origin</p>
+        <input contenteditable="true" class="ingredientcomponentmilk" value="single" name="Setting_Brew">
       </div>
     </div>
     <div class="milk">
       <div class="group1" >
-        <p class="milktext">Grind Setting:</p>
-        <input contenteditable="true" class="ingredientcomponentmilk" name="Grind_Setting">
-      </div>
-    </div>
-    <div class="milk">
-      <div class="group1" >
-        <p class="milktext">WaterToBrew :</p>
-        <input contenteditable="true" class="ingredientcomponentmilk"   name="WaterToBrew">
-      </div>
-    </div>
-    <div class="milk">
-      <div class="group1" >
-        <p class="milktext">Brew Method:</p>
-        <input contenteditable="true" class="ingredientcomponentmilk" name="Brew_Method">
-      </div>
-    </div>
 
-    <div class="brew-time">
-      <div class="group2">
-        <div class="group3">
-          <p class="brew-time2">Brew Time: </p>
-        </div>
-        <input contenteditable="true" class="ingredientcomponentbrewtime" name="Brew_Time">
+        <p class="milktext">Grind Setting</p>
+        <input contenteditable="true" class="ingredientcomponentmilk" value="Fine" name="Grind_Setting">
+
+      </div>
+    </div>
+    <div class="milk">
+      <div class="group1" >
+        <p class="milktext">Water : Ground </p>
+        <input contenteditable="true" class="ingredientcomponentmilk" value="17g to 1g" name="WaterToBrew">
+      </div>
+    </div>
+    <div class="milk">
+      <div class="group1" >
+        <p class="milktext">Brew Method</p>
+        <input contenteditable="true" class="ingredientcomponentmilk" value="French Press" name="Brew_Method">
+      </div>
+    </div>
+    <div class="milk">
+      <div class="group1" >
+        <p class="milktext">Brew Time</p>
+        <input contenteditable="true" class="ingredientcomponentmilk" value="5:00" name="Brew_Time">
+      </div>
+    </div>
+    
+    <div class="sugar">
+      <div class="group4" >
+        <p class="sugartext">Milk Quantity</p>
+        <input contenteditable="true" class="ingredientcomponentsugar" value="1 sp" name="Milk_Q">
       </div>
     </div>
     <div class="sugar">
       <div class="group4" >
-        <p class="sugartext">Milk Q:</p>
-        <input contenteditable="true" class="ingredientcomponentsugar" name="Milk_Q">
+
+        <p class="sugartext">Sugar</p>
+        <input contenteditable="true" class="ingredientcomponentsugar" value="1 sp" name="Sugar">
       </div>
     </div>
-    <div class="sugar">
-      <div class="group4" >
-        <p class="sugartext">Sugar:</p>
-        <input contenteditable="true" class="ingredientcomponentsugar" name="Sugar">
-      </div>
-    </div>
+    
   </form>
-  <div class="coffeeground"></div>
+<form action="justSpace"></form>
   <button class = "timeButton" onclick="window.location.href='./CreateTimer.html'" 
-    style="background-color: transparent; outline:none; border-width:0rem;">
+    style="background-color: transparent; outline:none;border-width:0rem;">
     <img class="time" src="./CreateRecipe_files/time.png"></button>
   <div class="group7">
     <button class="savethisrecipe" >Save this Recipe</button>
@@ -78,5 +80,6 @@
   </div>
   <div class="savedRecipes"></div>
 </div>
+
 </body>
 </html>

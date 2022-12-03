@@ -1,9 +1,17 @@
+import {getCurrentRecipe, isTea, swapToTeaColorTheme} from '../utils/utils.js';
+
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
     let index = localStorage.getItem('index');
-    let recipe = JSON.parse(localStorage.getItem(`newRecipe${index}`));
+    let recipe = getCurrentRecipe();
     let id = recipe['id'];
+    let tea = isTea(recipe);
+
+    if (tea) {
+        swapToTeaColorTheme();
+    }
+
     let input =document.querySelectorAll('input');
     input.forEach((el) => {
         el.value = recipe[el.name];
@@ -16,7 +24,8 @@ function init() {
 
         let formData = new FormData(formEl);
         let recipeObject = {
-            id: id
+            id: id,
+            Drink_Type: tea ? "tea" : "coffee"
         };
 
         for (const pair of formData.entries()) {
@@ -30,11 +39,13 @@ function init() {
     timeButton.addEventListener('click', () => {
         let formData = new FormData(formEl);
         let recipeObject = {
-            id: id
+            id: id,
+            Drink_Type: tea ? "tea" : "coffee"
         };
-            for (const pair of formData.entries()) {
-                recipeObject[pair[0]] = pair[1];
-            }
+
+        for (const pair of formData.entries()) {
+            recipeObject[pair[0]] = pair[1];
+        }
         localStorage.setItem(`newRecipe${index}`, JSON.stringify(recipeObject));
     });
     deleteButton.addEventListener('click', () => {

@@ -1,3 +1,18 @@
+:root {
+  --caffeinated-dark: #37251b;
+  --caffeinated-medium-dark: #80411e;
+  --caffeinated-medium: #ad6e2f;
+  --caffeinated-medium-light: #d49961;
+  --caffeinated-light: #e4bc84;
+  --caffeinated-milk: #faeadc;
+
+  --tea-dark: #222f1d;
+  --tea-medium-dark: #2c3e26;
+  --tea-medium: #465f43;
+  --tea-medium-light: #607f60;
+  --tea-light: #c5e7b9;
+  --tea-milk: #f1f9ee;
+}
 
 html {
 	font-size:62.5%;
@@ -24,7 +39,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #faeadc;
+  background-color: var(--caffeinated-milk);
 }
 .createrecipe .title {
   margin: 0rem 0.5rem 2.4rem 0rem;
@@ -34,13 +49,13 @@ body {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #d49961;
+  background-color: var(--caffeinated-medium-light);
   border-radius: 2.4rem;
   flex-shrink: 0;
 }
@@ -48,7 +63,7 @@ body {
   margin: 0rem 0.5rem 2.3rem 0rem;
   width: 33.3rem;
   height: 3.3rem;
-  border-bottom: solid 0.1rem #37251b;
+  border-bottom: solid 0.1rem var(--caffeinated-dark);
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -59,11 +74,11 @@ body {
   align-items: flex-start;
 }
 .createrecipe .milk .group1 .milktext {
-  margin-right: 25%;
+  margin-right: auto;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
@@ -75,13 +90,13 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e4bc84;
+  background-color: var(--caffeinated-light);
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
@@ -89,7 +104,7 @@ body {
   margin: 0rem 0.5rem 2.3rem 0rem;
   width: 33.3rem;
   height: 3.3rem;
-  border-bottom: solid 0.1rem #37251b;
+  border-bottom: solid 0.1rem var(--caffeinated-dark);
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -100,7 +115,7 @@ body {
   align-items: flex-start;
 }
 .createrecipe .brew-time .group2 .group3 {
-  margin-right: 32%;
+  margin-right: auto;
   box-sizing: border-box;
   padding-right: 0.9788rem;
   height: 100%;
@@ -109,11 +124,11 @@ body {
   flex-shrink: 0;
 }
 .createrecipe .brew-time .group2 .group3 .brew-time2 {
-  margin-right:25%;
+  margin-right: auto;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
@@ -133,13 +148,13 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e4bc84;
+  background-color: var(--caffeinated-light);
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
@@ -147,7 +162,7 @@ body {
   margin: 0rem 0.5rem 2.3rem 0rem;
   width: 33.3rem;
   height: 3.3rem;
-  border-bottom: solid 0.1rem #37251b;
+  border-bottom: solid 0.1rem var(--caffeinated-dark);
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -158,11 +173,11 @@ body {
   align-items: flex-start;
 }
 .createrecipe .sugar .group4 .sugartext {
-  margin-right: 46%;
+  margin-right: auto;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
@@ -174,54 +189,54 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e4bc84;
+  background-color: var(--caffeinated-light);
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
 .createrecipe .coffeeground {
-  margin: 0rem 0.5rem 25.5rem 0rem;
-  width: 33.3rem;
+  margin: 0rem 0.5rem auto 0rem;
+  width: auto;
   height: 3.3rem;
-  /* border-bottom: solid 0.1rem #37251b; */
+  /* border-bottom: solid 0.1rem var(--caffeinated-dark); */
   box-sizing: border-box;
   flex-shrink: 0;
 }
 .createrecipe .coffeeground .group5 {
   width: 100%;
-  height: 2.5rem;
+  height: auto;
   display: flex;
   align-items: flex-start;
 }
 .createrecipe .coffeeground .group5 .coffeegroundstext {
-  margin-right: 4.1rem;
+  margin-right: auto;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
 }
 .createrecipe .coffeeground .group5 .ingredientcomponentcoffeeground {
-  width: 12.6rem;
+  width: auto;
   height: 100%;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e4bc84;
+  background-color: var(--caffeinated-light);
   border-radius: 0.8rem;
   flex-shrink: 0;
 }
@@ -229,7 +244,7 @@ body {
   margin: 0rem 0rem 2.3rem 0.5rem;
   width: 33.3rem;
   height: 3.3rem;
-  border-bottom: solid 0.1rem #80411e;
+  border-bottom: solid 0.1rem var(--caffeinated-medium-dark);
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -244,7 +259,7 @@ body {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #80411e;
+  color: var(--caffeinated-medium-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
@@ -257,10 +272,7 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
-.timeButton {
-  margin-bottom: 2rem;
-  cursor: pointer; 
-}
+
 form {
   height: 40rem;
 }
@@ -281,13 +293,13 @@ form {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #faeadc;
+  color: var(--caffeinated-milk);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ad6e2f;
+  background-color: var(--caffeinated-medium);
   border-radius: 2.4rem;
   flex-shrink: 0;
 }
@@ -308,13 +320,13 @@ form {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.115;
-  color: #37251b;
+  color: var(--caffeinated-dark);
   font-family: Comfortaa, 'Source Sans Pro';
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e4bc84;
+  background-color: var(--caffeinated-light);
   border-radius: 2.4rem;
   flex-shrink: 0;
 }

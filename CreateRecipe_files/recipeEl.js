@@ -15,12 +15,14 @@ class createRecipe extends HTMLElement {
         <button class="recipeButton" onclick="window.location.href='./ViewRecipe.html'"><p></p><button>
         <p class="id" hidden></p>
         <div>
-        `
-        styles.innerHTML = getStyle();
+         `
+        styles.innerHTML = getStyle(); // Calls getStyle function below to put within the html
         this.shadowRoot.append(styles, recipe);
     }
     /**
      * @param {any} data
+     * Sets the data from the form
+     * If the data is from a tea recipe, change the style to match the tea theme
      */
     set data(data) {
         if(!data) return;
@@ -37,6 +39,10 @@ class createRecipe extends HTMLElement {
     }
 }
 
+/*
+* The getStyle function returns the style for the webpage
+* when the recipe being created is a coffee rather than a tea.
+*/
 function getStyle(isCoffee=true) {
     return `
     button {
@@ -53,7 +59,6 @@ function getStyle(isCoffee=true) {
         border-radius: 1.2rem;
         flex-shrink: 0;
     }
-    
     img {
         margin: 0rem 9.5rem 0.263rem 0rem;
         width: 2.0095rem;
@@ -71,8 +76,9 @@ function getStyle(isCoffee=true) {
         font-family: Comfortaa, 'Source Sans Pro';
         white-space: nowrap;
         flex-shrink: 0;
+
     }
     `;
 }
-
 customElements.define('recipe-bar', createRecipe);
+
